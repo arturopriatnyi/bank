@@ -1,0 +1,8 @@
+# IDE
+.idea/
+
+# build
+bin/
+
+# testing
+coverage.dev
