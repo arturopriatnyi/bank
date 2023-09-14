@@ -3,5 +3,5 @@ package main
 import "log"
 
 func main() {
-	log.Println("Wallet")
+	log.Println("Bank")
 }
