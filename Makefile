@@ -8,7 +8,7 @@ start:
 	./bin/bank
 
 run:
-	go run ./cmd/bank/main.go
+	docker-compose up --build mongodb postgresql & go run cmd/bank/main.go
 
 # testing
 
