@@ -96,7 +96,6 @@ func (s *MongoDBBalancesStorage) Set(ctx context.Context, balance banking.Balanc
 		},
 	}
 
-	// Set the upsert option to true to create the document if it doesn't exist
 	opts := options.Update().SetUpsert(true)
 	_, err := s.collection.UpdateOne(ctx, filter, update, opts)
 
