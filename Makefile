@@ -2,13 +2,13 @@
 
 .PHONY: build
 build:
-	go build -o ./bin/wallet ./cmd/wallet/main.go
+	go build -o ./bin/bank ./cmd/bank/main.go
 
 start:
-	./bin/wallet
+	./bin/bank
 
 run:
-	go run ./cmd/wallet/main.go
+	docker-compose up --build mongodb postgresql & go run cmd/bank/main.go
 
 # testing
 
